@@ -46,8 +46,7 @@ contract MerkleAirdrop is EIP712 {
      * @param account the account we are claiming airdrop tokens to
      * @param amount the amount being claimed
      * @param merkleProof the merkle proofs allowing reconstruction of the merkle root
-     * three integers below make up an ECDSA signature. Together, they allow us to identify the recover the signers
-     * public key from a message hash.
+     * three integers below make up an ECDSA signature. Together, they allow us to identify the recover the signers ethereum address.
      * @param v for a given r (x coordinate), there are two possible points - the positive point on the curve, and the negative point.
      * @param r the x coordinate on the elliptic curve, found when signing
      * @param s a alue derived from the message hash, the private key and r
