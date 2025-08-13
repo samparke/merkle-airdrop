@@ -26,7 +26,7 @@ contract ClaimAirdrop is Script {
         vm.stopBroadcast();
     }
 
-    // we can just use openzeppelin's 'tryRecover' from ECDSA
+    // we can just use openzeppelin's 'tryRecover' from ECDSA.sol
     function splitSignature(bytes memory sig) public pure returns (uint8 v, bytes32 r, bytes32 s) {
         // 65 bytes = (bytes32 r + bytes32 s + byte v)
         if (sig.length != 65) {
